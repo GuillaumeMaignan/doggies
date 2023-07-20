@@ -6,14 +6,16 @@ frontend:
         - npm i
         - nvm use 10
         - npm install --silent --global expo-cli
+        - npm install -g expo-cli
         - |-
           if [ -f yarn.lock ]; then
            yarn
           elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
-           npm i
+           npx expo install --f
           else
            npm install npm install --fix force
           fi
+
     build:
       commands:
         - "expo build:web"
