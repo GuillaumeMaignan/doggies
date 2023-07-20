@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - expo install
         - nvm use 10
         - npm install --silent --global expo-cli
         - |-
