@@ -12,7 +12,7 @@ frontend:
           elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
            npm ci
           else
-           npm install
+           npm install npm install --fix force
           fi
     build:
       commands:
