@@ -32,7 +32,7 @@ function Landing(props) {
       setConection("Connexion");
     }
     if (lang === "spain") {
-      setFlag(require("../assets/Spain.png"));
+      setFlag(require("../assets/panama.png"));
       setName("Nombre");
       setPassword("Contraseña");
       setConection("Conexión");
@@ -93,7 +93,7 @@ function Landing(props) {
               <TouchableOpacity onPress={() => setLanguage("spain")}>
                 <Image
                   style={styles.flag}
-                  source={require("../assets/Spain.png")}
+                  source={require("../assets/panama.png")}
                 ></Image>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => setLanguage("eng")}>
